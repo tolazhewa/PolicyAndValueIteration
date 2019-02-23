@@ -1,0 +1,39 @@
+Welcome to our Optimal Policy Estimation implementation.
+
+This project is attempting at estimating optimal policies for a 4x4 gridworld in which the first (top-left) and the last (bottom-right) are the terminal states.
+The goal is to get to the terminal states.
+
+To use this software please take note of the following.
+
+There is an input file that comes with default values which you can change. Here's what the input files values represent:
+
+-----------------------------------------
+Probability of moving to next state
+Probability of staying at current state
+Reward for moving in the UP direction
+Reward for moving in the DOWN direction
+Reward for moving in the LEFT direction
+Reward for moving in the RIGHT direction
+-----------------------------------------
+
+Feel free modify and play around with it as you like!
+
+To run Value iteration do the following:
+> make via
+> ./via.o < input
+
+To run Policy iteration do the following:
+> make pia
+> ./pia.o < input
+
+To compile both simply:
+> make
+
+To clean up the executables:
+> make clean
+
+Once again, please ensure the input file has all 6 values and they are numerical values.
+
+Thank you for reading the README :)
+
+
